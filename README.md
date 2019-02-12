@@ -37,6 +37,15 @@ The model of our approach looks like the following.
 
 ![Overview of the process](images/exercise/process-overview.svg)
 
+## Grading
+
+Follow the exercises in order. The 3 hour laboratory class should be sufficient time to complete all exercises. The result will be graded as follows.
+
+- For a sufficient grade (2) you must complete exercise 2 and 3. Exercise 3 must run to completion, but it may work incorrectly (e.g. import less data, or skip the duplicate search, etc).
+- For a satisfactory grade (3) exercise 3 must work correctly.
+- For a good grade (4) exercise 4 should be completed without errors.
+- For a very good grade (5) all exercises should be completed without errors.
+
 ## Exercises
 
 Start with [Exercise 1 here](exercise1.md).
