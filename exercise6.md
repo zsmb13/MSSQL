@@ -8,7 +8,7 @@ Create a report that lists the **top 10 highest rated books** in a table.
 
   - Use an _Image_ component from the toolbox. The image source should be _External_ in order to fetch it based on the URL.
 
-- The average rating should be computed by an SQL script.
+- The average rating should be computed by an SQL script. Ignore any book that does not have at least 20 ratings.
 
   > :memo: Include this sql script (a single sql statement) in file `exercise-6\sql_get_top_books.sql`.
 
