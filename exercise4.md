@@ -1,6 +1,6 @@
 # Exercise 4: Report
 
-> :memo: Extend the provided Reporting Services project `reporting_services.sln` by modifying the project contents in place.
+> :memo: Extend the provided Reporting Services project `exercise-4\ex4_reporting_services.sln` by modifying the project contents in place.
 
 Create a report that summarizes from which country do our users come from. A table should list the number of users by country, along with the average age from the country; and a pie chart should display the number of users from the top 10 countries.
 
@@ -18,7 +18,7 @@ The final report should look similar to this:
 
 1. Add a new _Data source_ to the report by right clicking the _Data sources_ folder in the _Report data_ window.
 
-   - Chose the "Embed connections" option.
+   - Chose the "Embedded connection" option.
    - Connect to _Microsoft SQL Server_.
    - Use the _Edit_ button to specify connection details. Use the same settings as before.
 
@@ -28,6 +28,7 @@ The final report should look similar to this:
 
    - Chose "Use a dataset embedded in my report"
    - Select the data source from the dropdown. It is the data source created in the previous step.
+   - The query should list the number of users and average age for each country, sorted descending according to the number of users. The query should also skip countries which are "outliers" having too few (<50) users.
    - Write the query as text as follows
 
      ```sql
@@ -54,7 +55,7 @@ The final report should look similar to this:
      ![Designer view of the report](images/exercise/rs-users-report-designer.png)
 
    - Chose a pie chart type.
-   - Create a new dataset, similar to the one before, that returns only the top 10 rows.
+   - Create a new dataset, similar to the one before, that returns only the **top 10** rows.
    - Open the _Chart data_ overlay by clicking the chart component. You need to click to a white area for this overlay to appear.
    - From the newly created dataset display the _Count_ field as the _Values_ and the _Country_ field as _Category groups_:
 
@@ -62,7 +63,7 @@ The final report should look similar to this:
 
 1. Preview the report by switching to the _Preview_ tab in Visual Studio.
 
-> :memo: Include a screenshot of the report from Visual Studio as `exercise-4\report_screenshot_users.png`.
+> :memo: Include a screenshot of the report from Visual Studio as `exercise-4\ex4_report_screenshot_users.png`.
 
 ## Next exercise
 

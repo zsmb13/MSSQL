@@ -1,6 +1,6 @@
 # Exercise 3: Import the users dataset using Integration Services
 
-> :memo: Extend the provided Integration Services project `integration_services.sln` by modifying the project contents in place.
+> :memo: Extend the provided Integration Services project `exercise-3\ex3_integration_services.sln` by modifying the project contents in place.
 
 1. Open the solution with Visual Studio, open _Package.dtsx_ from _Solution explorer_.
 
@@ -50,12 +50,13 @@
 
 1. In order to split the _Location_ column into two, and to parse the _Age_ as really a number, add a _Derived column_ transformation. Connect the blue output of the file source to into this new box to specify the data flow direction. Then open the settings to specify how the derived values are calculated.
 
-   - Split the location into two. Create a new _City_ and a new _Country_ column using string operations.
+   - Add a new column that contains the age as an integer. Check if the string is "NULL", in that case keep the null value, or cast to int.
+     - Use the following expression: `[Age] == "NULL" ? NULL(DT_I4) : (DT_I4)[Age]`. (You may need to change the column name.)
+   - Split the location column into two. Create a new _City_ and a new _Country_ column using string operations.
      - Take a look at a few examples of the _Location_: they are in the form of "city, state, country"
      - To separate the country find the second comma in the text. The rest is the city (you can keep the state included in the city text). E.g. "nyc, new york, usa" becomes:
        - Country: "usa"
        - City: "nyc, new york"
-   - Add a new column that contains the age as an integer. Check if the string is "NULL", in that case keep the null value `NULL(DT_I4)`, or cast to int `(DT_I4)[FieldName]`.
    - Find more information on the syntax of the _Expression_ here: <https://docs.microsoft.com/en-us/sql/integration-services/expressions/integration-services-ssis-expressions?view=sql-server-2017)>
 
      ![Integration Services Derived column transformation](images/exercise/is-users-derived-col.png)
@@ -98,7 +99,7 @@
 
 1. If the process succeeded, verify the contents of the table using SQL Server Management Studio. Create a screenshot of the table contents. Please make sure that the screenshot is taken such that it **includes the database name** (which is your Neptun code) from the _Object explorer_ window!
 
-   > :memo: Save the screenshot file as `exercise-3\table_screenshot_users.png` - overwrite the placeholder file with yours.
+   > :memo: Save the screenshot file as `exercise-3\ex3_table_screenshot_users.png` - overwrite the placeholder file with yours.
 
 ## Next exercise
 
