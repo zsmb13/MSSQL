@@ -15,6 +15,7 @@
    1. Create a folder where you will work, e.g. `c:\work\<neptun>\mssql-lab`
    1. Open a console to this location
    1. Execute the following command: `git clone <repository-url> .`
+      - In the university laboratories, this should ask for your credentials. If there is no login window, the clone will likely fail. Follow the instructions at the end of this page to remove existing GitHub credentials.
 
 1. Open the checked out folder, and type your NEPTUN code into the `neptun.txt` file. We need this to map your submission to you.
 
@@ -50,3 +51,11 @@ git push
 ```
 
 To verify that you have uploaded everything, open the repository online and check its contents.
+
+### Remove GitHub credentials
+
+In the university laboratories, the computer may remember your login information. To remove your credentials, follow these steps.
+
+1. Open `Credential manager` from the Start menu.
+1. Look for GitHub tokens in the `Windows Credentials` page, and remove all of them.
+   ![Remove existing GitHub access token](images/git-credential-remove.png)
