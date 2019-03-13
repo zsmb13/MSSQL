@@ -61,6 +61,8 @@ The final report should look similar to this:
 
      ![Specify chart data](images/exercise/rs-users-chart-data.png)
 
+1. Add a title to the report, and include your neptun code in the title. (See the sample report at the top.)
+
 1. Preview the report by switching to the _Preview_ tab in Visual Studio.
 
 > :memo: Include a screenshot of the report from Visual Studio as `exercise-4\ex4_report_screenshot_users.png`.

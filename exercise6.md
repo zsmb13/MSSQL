@@ -14,6 +14,8 @@ Create a report that lists the **top 10 highest rated books** in a table.
 
 - Make sure to calculate the rating appropriately: if the imported rating is of type integer, make sure to use decimal types when averaging the values!
 
+- Add a title to the report, and include your neptun code in the title.
+
 The final report should look similar to this:
 
 ![Top books report](images/exercise/report-books.png)
