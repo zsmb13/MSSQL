@@ -42,7 +42,7 @@
      - Verify that the correct number of columns is present
      - Change the UserID to be parsed as `four byte signed integer`
      - Although the age should be a number, it must be parsed as a string here, because there are values in the CSV with the literal `NULL` text
-     - Increase the length (_OutputColumnWidth_) of the Location column from 50 to 1000
+     - Increase the length (_OutputColumnWidth_) of the Location column from 50 to 1.000
    - The preview pane is a good way to verify the results. Make sure that there are no lingering quotation marks in the values (or you missed to specify the text qualifier before).
    - And you are done. If you need to modify the settings, you will find this _Connection manager_ at the bottom of the designer surface.
 

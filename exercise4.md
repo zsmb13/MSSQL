@@ -24,6 +24,10 @@ The final report should look similar to this:
 
      ![Add a new data source](images/exercise/rs-add-data-source.png)
 
+   - Switch to the _Credentials_ page and select the _Use Windows Authentication option_.
+
+     ![Add a new data source](images/exercise/rs-add-data-source-credentials.png)
+
 1. Add a new dataset by right clicking the _Datasets_ folder in the _Report data_ window. The dataset specifies how to fetch the data we want to display. It will be an SQL query.
 
    - Chose "Use a dataset embedded in my report"
