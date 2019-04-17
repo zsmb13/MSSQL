@@ -67,8 +67,8 @@
 
 1. Add an _ADO NET Destination_ component (look in the _Other Destinations_ category) to save the data into database.
 
-   - Direct he output of the previous _Sort_ component here.
-   - Open the components settings dialog by double clicking the component box.
+   - Direct the output of the previous _Sort_ component here.
+   - Open the component's settings dialog by double clicking the component box.
    - Create a new _Connection manager_ that connects to the database. Use the same connection settings as before.
    - Select the users table you created as target.
 
